@@ -1,4 +1,4 @@
-import Tests from './tests/isBalanced_tests.mjs';
+import Tests from './isBalanced_tests.mjs';
 
 const tests = new Tests
 

@@ -1,4 +1,4 @@
-import Tests from './tests/fib_tests.mjs';
+import Tests from './fib_tests.mjs';
 
 const tests = new Tests;
 

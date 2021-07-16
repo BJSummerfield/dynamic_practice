@@ -1,4 +1,4 @@
-import Tests from './tests/gridTraveler_tests.mjs'
+import Tests from './gridTraveler_tests.mjs'
 
 const tests = new Tests
 
