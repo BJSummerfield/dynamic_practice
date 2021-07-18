@@ -7,7 +7,7 @@ class Tests {
       [14,[2,4,7,10]],
       [300,[7,14]]
     ]
-  }
-}
+  };
+};
 
 export default Tests

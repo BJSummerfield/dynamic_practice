@@ -16,4 +16,3 @@ const gridTraveler = ( columns, rows, memo = {} ) => {
 for (let test of tests.cases) {
   console.log( gridTraveler( test[0], test[1] ));
 }
-

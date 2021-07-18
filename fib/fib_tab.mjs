@@ -18,4 +18,3 @@ const fib = (num) => {
 for (let test of tests.cases) {
   console.log( fib(test) );
 };
-
