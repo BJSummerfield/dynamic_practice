@@ -7,7 +7,7 @@ class Tests {
       [18,18],
       [32,40],
     ]
-  }
-}
+  };
+};
 
-export default Tests
+export default Tests;

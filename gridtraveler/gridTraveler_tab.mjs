@@ -11,12 +11,12 @@ const gridTraveler = ( columns, rows ) => {
       const current = table[c][r];
       if ( c < columns ) table[c + 1][r] += current;
       if ( r < rows ) table[c][r + 1] += current;
-    }
-  }
+    };
+  };
 
   return table[columns][rows];
-}
+};
 
 for (let test of tests.cases) {
   console.log(gridTraveler( test[0],test[1] ));
-}
+};
