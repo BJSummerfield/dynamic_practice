@@ -15,7 +15,7 @@ const canConstruct = (target, wordbank, memo = {}) => {
       };
     };    
   };
-  memo[target] = false
+  memo[target] = false;
   return false;
 };
 
