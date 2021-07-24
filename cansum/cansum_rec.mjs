@@ -1,14 +1,14 @@
-import Tests from './cansum_tests.mjs'
+import TestSuite from '../tests/testsuite.mjs'
 
-const tests = new Tests
-
-const canSum = (target, numbers, memo = {}) => {
+const canSum = (array, memo = {}) => {
+  let target = array[0];
+  let numbers = array[1];
   if ( target in memo ) return memo[target];
   if ( target === 0 ) return true;
   if ( target < 0 ) return false;
   
   for (let n of numbers) {
-    if ( canSum(target - n, numbers, memo ) === true) {
+    if ( canSum([target - n, numbers], memo ) === true) {
       memo[target] = true
       return memo[target];
     };
@@ -17,6 +17,5 @@ const canSum = (target, numbers, memo = {}) => {
   return memo[target]
 };
 
-for (let test of tests.cases) {
-  console.log(canSum(test[0],test[1]));
-};
+const testSuite = new TestSuite
+testSuite.run(canSum,testSuite.canSum())

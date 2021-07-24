@@ -25,6 +25,16 @@ class TestSuite {
       {target:[32,40], answer:71416438784701300000, description:'32x40 should return 71416438784701300000'}
     ]
   }
+
+  canSum = () => {
+    return [
+      {target:[5,[3,2,5]], answer:true, description: "5, 3,2,5 yields true"},
+      {target:[12,[8,7,9]], answer:false, description: "12, 8,7,9 yields false"},
+      {target:[100,[1,2,25]], answer:true, description: "100, 1,2,25 yields true"},
+      {target:[14,[2,4,7,10]], answer:true, description: "14, 2,4,7,10 yields true"},
+      {target:[300,[7,14]], answer:false, description: "300, 7,14 yields false"}
+    ]
+  } 
 };
 
 export default TestSuite
