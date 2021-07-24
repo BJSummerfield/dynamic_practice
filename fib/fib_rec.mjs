@@ -1,6 +1,4 @@
-import Tests from './fib_tests.mjs';
-
-const tests = new Tests;
+import TestSuite from '../tests/testsuite.mjs'
 
 const fib = ( num, memo = {} ) => {
    if ( num <= 2 ) return 1;
@@ -11,6 +9,5 @@ const fib = ( num, memo = {} ) => {
    return memo[num];
 };
 
-for ( let test of tests.cases ) {
-  console.log( fib(test) );
-}
+const testSuite = new TestSuite
+testSuite.run(fib,testSuite.fib())
