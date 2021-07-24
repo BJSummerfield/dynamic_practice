@@ -1,8 +1,8 @@
-import Tests from './bestsum_tests.mjs'
+import TestSuite from '../tests/testsuite.mjs'
 
-const tests = new Tests
-
-const bestSum = (target, numbers) => {
+const bestSum = (array) => {
+  let target = array[0];
+  let numbers = array[1];
   const table = new Array(target + 1).fill(null)
   const shortestCombination = new Array
   
@@ -22,6 +22,5 @@ const bestSum = (target, numbers) => {
   return table[target];
 };
 
-for (let test of tests.cases) {
-  console.log(bestSum( test[0],test[1] ));
-};
+const testSuite = new TestSuite
+testSuite.run(bestSum,testSuite.bestSum())
